@@ -1,0 +1,24 @@
+#   Variables for compilation of c/c++ files
+
+CXX     =   g++                          # Compiler 
+WALL    =   -Wall                        # Warning all flag
+WERROR  =   -Werror                      # Convert warnings into error
+WARNING =   $(WALL) $(WERROR)            # Warnings
+DEBUG   =   -g $(WARNING)                # Debugging flag
+CFLAG   =   -c $(DEBUG)                  # Compilation flag 
+OFLAG   =   $(DEBUG) -o                  # O/p Flag
+STD     =   -std=c++11                   # C++ 11 standard
+
+#   File names
+
+CPP     =   .cpp
+O       =   .o
+PROG    =   prog_
+OUT     =   .out
+
+PROGRAM_NAME = $(PROG)$(PROG_NO)
+
+# Target Name
+
+CLEAN   =   clean
+RUN     =   run

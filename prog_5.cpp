@@ -1,4 +1,4 @@
-/* This code does not compile error free yet, correct it or ignore it */
+
 #include <iostream>
 #include <vector>
 #include <initializer_list>
@@ -9,7 +9,7 @@ template <class T>
 struct TheList
 {
 	vector<T> listVector;
-	TheList(intializer_list<T> myList) : listVector(myList)
+	TheList(initializer_list<T> myList) : listVector(myList)
 	{
 		for (auto i: listVector)
 		{
